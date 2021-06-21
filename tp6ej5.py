@@ -32,11 +32,11 @@ def decodificado(lugares, ruta, ruta2):
     nuevoarchivo.write(decodificado)
     return 
 
-def prueba():
+def principal():
     ruta = input(str("Ingrese la ruta del archivo .cesar que quiere decifrar: "))
     lugares = int(input("ingrese la cantidad de lugares que fue cifrado: "))
     ruta2 = input(str("Ingrese la ruta donde quiere guardar el archivo decodificado: "))
     decodificado(lugares, ruta, ruta2)
 
 if __name__ == "__main__":
-    prueba()       
+    principal()       

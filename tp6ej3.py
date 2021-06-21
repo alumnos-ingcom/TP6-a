@@ -17,10 +17,10 @@ def copiadora(ruta, ruta2):
     return
 
 
-def prueba():
+def principal():
     ruta = input(str("Ingrese la ruta del archivo que quiere copiar: "))
     ruta2 = input(str("Ingrese la ruta de destino del nuevo archivo: "))
     copiadora(ruta, ruta2)
     
 if __name__ == "__main__":
-    prueba()
+    principal()
