@@ -4,7 +4,6 @@
 ################
 
 
-
 def cifrar_archivo(arg="texto de ejemplo", ext="txt", rot=13):
     
     try:
@@ -39,6 +38,8 @@ def cifrar_archivo(arg="texto de ejemplo", ext="txt", rot=13):
       
     resultado = "".join(salida) #junta la lista de salida como una cadena
     
+    
+    #falta implementar confirmación antes de sobrescribir el archivo de salida
     archivo_nuevo = open(f"{arg}.cesar.txt", "w")
     archivo_nuevo.write(resultado)
     
@@ -49,5 +50,4 @@ def cifrar_archivo(arg="texto de ejemplo", ext="txt", rot=13):
 if __name__ == "__main__":
     
     print(cifrar_archivo())
-
 
